@@ -17,9 +17,14 @@ var AppleAppSiteAssociation = {
   // },
 
   doShow: function(req, res){
-
+    console.log('...........doShow')  ;
       fs.readFile(USER_PATH, function(err, data){
+
+       console.log('...........11111');
+
       if(!err){
+
+        console.log('...........correct');
 
         var obj = JSON.parse(data);
 
