@@ -6,7 +6,7 @@ var USER_PATH = './apple-app-site-association';
 var AppleAppSiteAssociation = {
   init: function(app){
     console.log('...........apple-app-site-association')
-    app.get('/apple-app-site-association', this.doShow);
+    app.get('/.well-known/apple-app-site-association', this.doShow);
   },
 
   doShow: function(req, res){
