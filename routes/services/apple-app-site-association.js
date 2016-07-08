@@ -1,20 +1,13 @@
 
 var fs = require('fs');
 
-var USER_PATH = '../apple-app-site-association';
+var USER_PATH = './apple-app-site-association';
 
 var AppleAppSiteAssociation = {
   init: function(app){
     console.log('...........apple-app-site-association')
     app.get('/apple-app-site-association', this.doShow);
   },
-
-  // doTest: function(req, res){
-  //   res.send({
-  //     status: 1,
-  //     info: '测试服务doTest'
-  //   });
-  // },
 
   doShow: function(req, res){
     console.log('...........doShow')  ;
