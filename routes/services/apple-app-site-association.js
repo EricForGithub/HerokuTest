@@ -1,7 +1,7 @@
 
 var fs = require('fs');
 
-var USER_PATH = './apple-app-site-association';
+var USER_PATH = '../apple-app-site-association';
 
 var Test = {
   init: function(app){
