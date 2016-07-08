@@ -3,8 +3,9 @@ var fs = require('fs');
 
 var USER_PATH = '../apple-app-site-association';
 
-var Test = {
+var AppleAppSiteAssociation = {
   init: function(app){
+    console.log('')
     app.get('/apple-app-site-association', this.doShow);
   },
 
@@ -32,4 +33,4 @@ var Test = {
   }
 };
 
-module.exports = Test;
+module.exports = AppleAppSiteAssociation;
