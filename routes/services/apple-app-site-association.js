@@ -21,10 +21,7 @@ var AppleAppSiteAssociation = {
 
         var obj = JSON.parse(data);
 
-        return res.send({
-            status: 1,
-            data: obj
-          });
+        return res.send(obj);
         
       }else{
 
