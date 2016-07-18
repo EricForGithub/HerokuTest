@@ -12,6 +12,9 @@ var Message = {
   //获取公告消息
   getMessage: function(req, res){
     var key = req.param('key');
+    console.log("-----req is "+req);
+    console.log('================== key from req is '+key);
+
     if(key !== util.getKey()){
       return res.send({
         status: 0,
